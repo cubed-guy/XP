@@ -1,0 +1,267 @@
+Constructs:
+  F:  for N in range(a)
+  \@: for N in range(a+1)
+  M:  for y in a
+  \[: loop
+  D:  loop till no change
+  i:  if
+  e:  else
+  \}: close bracket
+  \]: inf close
+  \#: break
+  n:  loop number (0 indexed)
+  N:  loop number (1 indexed)
+  y:  element
+
+  Specifics:
+    # These commands can be recreated using the ones above
+    .[: while a
+
+Literals:
+  0
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+  \": string
+
+  Specifics:
+    # These commands can be recreated using the ones above
+    \': char
+    X:  16
+    .H: 100
+    .a: "abcdefghijklmnopqrstuvwxyz"
+
+IO Operations:
+  I:  input
+  ,:  print
+  .,: print no ln
+
+  Specifics:
+    # These commands can be recreated using the ones above
+    .I: input into list until empty line
+
+Vectorized Operations:
+  +:  add
+  \-: subtract
+  \*: multiply
+  /:  divide
+  \%: remainder
+  p:  power
+  \&: bitwise and
+  \|: bitwise or
+  \~: bitwise not
+  ^:  bitwise xor
+  \?: not
+  a:  and
+  r:  or
+  _:  reduce operation (requires an operator after it)
+  q:  equals
+  Q:  equals (non vectorized)
+  d:  ge
+  A:  convert from ASCII (chr)
+  b:  to base
+  .2: log base 2
+  .n: neg
+
+  Specifics:
+    # These commands can be recreated using the ones above
+    \>: increment
+    <:  decrement
+    H:  double
+    h:  halve
+    Z:  square
+    z:  sqrt
+    P:  power of 2
+    ::  from base 2
+    \=: from base 16
+    \!: factorial
+    ./: reciprocal
+
+Stack Operations:
+  \\: delete
+  s:  swap
+  $:  duplicate
+  C:  collect
+
+List Operations:
+  O:  sum
+  \`: extract
+  g:  length
+  \{: sort
+  R:  reverse
+  L:  range()
+  J:  join
+  f:  deep flatten
+  t:  contains
+  c:  count
+  x:  find
+  E:  nth element (b vectorized)
+  \): collect all
+  .E: set nth element
+  .K: first n elements
+  .J: last n elements
+  .k: extract first element
+  .j: extract last element
+  .W: minimum
+  .M: maximum
+  .l: islist
+  .]: change size of a to b
+
+  Specifics:
+    # These commands can be recreated using the ones above
+    j:  last element (pop a)
+    k:  first element (pop a)
+    ;:  last element (get a)
+    Y:  swap and concatenate
+    l:  range(len(a))
+    .f: first n elements (get a)
+    .e: last n elements (get a)
+
+String Operations:
+  m:  split by space
+  G:  split by lengths
+  U:  upper case
+  u:  lower case
+  V:  isupper
+  v:  islower
+  w:  isalphabetic
+  W:  isnumeric
+  T:  concatenate
+  o:  convert to ASCII (ord)
+  B:  from base
+  S:  make to list of chars
+  .T: title case
+  .L: left strip
+  .R: right strip
+  .r: replace
+
+  Specifics:
+    # These commands can be recreated using the ones above
+    K:  strip whitespaces
+    .S: strip
+    .w: isalnum
+
+Sorted by Symbol:
+  $:  duplicate
+  +:  add
+  ,:  print
+  /:  divide
+  0:  numeric literal
+  1:  numeric literal
+  2:  numeric literal
+  3:  numeric literal
+  4:  numeric literal
+  5:  numeric literal
+  6:  numeric literal
+  7:  numeric literal
+  8:  numeric literal
+  9:  numeric literal
+  ::  from base 2
+  ;:  last element (get a)
+  <:  decrement
+  \!: factorial
+  \": string
+  \#: break
+  \%: remainder
+  \&: bitwise and
+  \': char
+  \): collect all
+  \*: multiply
+  \-: subtract
+  \=: from base 16
+  \>: increment
+  \?: not
+  \@: for N in range(a+1)
+  \[: loop
+  \\: delete
+  \]: inf close
+  \{: sort
+  \|: bitwise or
+  \}: close bracket
+  \~: bitwise not
+  ^:  bitwise xor
+  _:  reduce operation (requires an operator after it)
+  \`: extract
+  A:  convert from ASCII (chr)
+  B:  from base
+  C:  collect
+  D:  loop till no change
+  E:  nth element (b vectorized)
+  F:  for N in range(a)
+  G:  split by lengths
+  H:  double
+  I:  input
+  J:  join
+  K:  strip whitespaces
+  L:  range()
+  M:  for y in a
+  N:  loop number (1 indexed)
+  O:  sum
+  P:  power of 2
+  Q:  equals (non vectorized)
+  R:  reverse
+  S:  make to list of chars
+  T:  concatenate
+  U:  upper case
+  V:  isupper
+  W:  isnumeric
+  X:  16
+  Y:  swap and concatenate
+  Z:  square
+  a:  and
+  b:  to base
+  c:  count
+  d:  ge
+  e:  else
+  f:  deep flatten
+  g:  length
+  h:  halve
+  i:  if
+  j:  last element (pop a)
+  k:  first element (pop a)
+  l:  range(len(a))
+  m:  split by space
+  n:  loop number (0 indexed)
+  o:  convert to ASCII (ord)
+  p:  power
+  q:  equals
+  r:  or
+  s:  swap
+  t:  contains
+  u:  lower case
+  v:  islower
+  w:  isalphabetic
+  x:  find
+  y:  element
+  z:  sqrt
+  .,: print no ln
+  ./: reciprocal
+  .2: log base 2
+  .[: while a
+  .]: change size of a to b
+  .E: set nth element
+  .H: 100
+  .I: input into list until empty line
+  .J: last n elements
+  .K: first n elements
+  .L: left strip
+  .M: maximum
+  .R: right strip
+  .S: strip
+  .T: title case
+  .W: minimum
+  .a: "abcdefghijklmnopqrstuvwxyz"
+  .e: last n elements (get a)
+  .f: first n elements (get a)
+  .j: extract last element
+  .k: extract first element
+  .l: islist
+  .n: neg
+  .r: replace
+  .w: isalnum
