@@ -38,9 +38,9 @@ This pushes the string "Hello", and the "World" onto the stack.
 ```c
 Stack:
 +---------+
-| "Hello" |  <- top
+| "World" |  <- top
 +---------+
-| "World" |
+| "Hello" |
 +---------+
 ```
 
